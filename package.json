@@ -11,7 +11,7 @@
     "ts:def": "tsd init && tsd install react --save && tsd install react-dom --save && tsd install react-router --save && tsd install require --save",
     "ts:build": "tsc -p ./ --outDir ./src",
     "ts:watch": "tsc -p ./ --outDir ./src -w",
-	"server:clientside": "node ./bin/server/clientSideRendering.js",
+    "server:clientside": "node ./bin/server/clientSideRendering.js",
     "server:serverside": "node ./bin/server/serverSideRendering.js",
     "dev:build": "npm run ts:build && webpack -d --colors --config ./config/webpack.clientside.dev.js",
     "dev:watch": "concurrent \"npm run ts:watch\" \"node ./bin/server/hotReload.js\"",
