@@ -1,0 +1,9 @@
+.text {
+	color: red;
+}
+
+img {
+	width: 10vw;
+	height: 5vh;
+	/*background: url(img/react.png) 0 0;*/
+}

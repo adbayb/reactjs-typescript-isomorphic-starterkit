@@ -1,0 +1,79 @@
+{
+  "name": "reactjs-typescript-starterkit",
+  "version": "1.0.0",
+  "description": "A React.js typescript isomorphic template with Webpack and react-router",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "node ./bin/clean.js",
+    "postinstall": "npm run ts:init",
+    "ts:init": "npm run ts:config && npm run ts:def",
+    "ts:config": "tsc --init --module es6 --t es6 --allowJs --jsx preserve --noImplicitAny --noImplicitReturns --preserveConstEnums --experimentalDecorators --removeComments --sourceMap",
+    "ts:def": "tsd init && tsd install react --save && tsd install react-dom --save && tsd install react-router --save && tsd install require --save",
+    "ts:build": "tsc -p ./ --outDir ./src",
+    "ts:watch": "tsc -p ./ --outDir ./src -w",
+	"server:clientside": "node ./bin/server/clientSideRendering.js",
+    "server:serverside": "node ./bin/server/serverSideRendering.js",
+    "dev:build": "npm run ts:build && webpack -d --colors --config ./config/webpack.clientside.dev.js",
+    "dev:watch": "concurrent \"npm run ts:watch\" \"node ./bin/server/hotReload.js\"",
+    "prod:build:clientside": "npm run ts:build && webpack -p --progress --colors --config ./config/webpack.clientside.prod.js",
+    "prod:build:serverside": "npm run ts:build && webpack -p --progress --colors --config ./config/webpack.serverside.js",
+    "prod:deploy:clientside": "npm run prod:build:clientside && npm run server:clientside",
+    "prod:deploy:serverside": "npm run prod:build:serverside && npm run server:serverside",
+    "prod:deploy": "npm run prod:deploy:serverside"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoubdev/reactjs-typescript-starterkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayoubdev/reactjs-typescript-starterkit/issues"
+  },
+  "keywords": [
+    "reactjs",
+    "webpack",
+    "react-router",
+    "boilerplate",
+    "template",
+    "typescript",
+    "transpilation",
+    "isomorphic",
+    "server side rendering",
+    "client side rendering",
+    "starter",
+    "kit",
+    "starterkit",
+    "starter-kit"
+  ],
+  "author": "Ayoub ADIB <ayoub.development@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "concurrently": "^2.0.0",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "fs": "0.0.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "typescript": "^1.8.2",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "compression": "^1.6.1",
+    "express": "^4.13.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  }
+}

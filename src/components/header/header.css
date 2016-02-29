@@ -1,0 +1,9 @@
+header {
+	width: 100vw;
+	height: 10vh;
+	background-color: red;
+}
+
+p {
+	font-size: 3vmin;
+}
