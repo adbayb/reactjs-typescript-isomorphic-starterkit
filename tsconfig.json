@@ -1,33 +1,33 @@
 {
-    //cf. http://json.schemastore.org/tsconfig et 
-	//https://github.com/Microsoft/TypeScript/wiki/tsconfig.json pour plus de détails
-	"compilerOptions": {
-        "module": "es2015",
-        "target": "es2015",
-        "allowJs": true,
-        "jsx": "preserve",
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "preserveConstEnums": true,
-        "experimentalDecorators": true,
-        "removeComments": true,
-        "sourceMap": true
-    },
-	/*Le script ts:config ne permet pas à l'heure actuelle d'ajouter une liste de fichiers d'entrées
-	directement en ligne de commande, @ entrer manuellement!...
-	files ne peut pas être utilisé en même temps qu'exclude, 
-	si les deux sont utilisés, seul l'instruction files est prise en compte.
-	L'instruction files transpile récursivement les dépendances à partir des différents points 
-	d'entrée .ts/.tsx que l'on lui spécifie. On doit également spécifier les fichiers de définition
-	pour éviter les erreurs de types...:*/
-	"files": [
-		"./typings/tsd.d.ts",
-		"./src/server.tsx",
-		"./src/client.tsx"
-	]
-    /*
-	"exclude": [
-        "node_modules"
-    ]
-	*/
+  //cf. http://json.schemastore.org/tsconfig et
+  //https://github.com/Microsoft/TypeScript/wiki/tsconfig.json pour plus de détails
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es2015",
+    "allowJs": true,
+    "jsx": "preserve",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "sourceMap": true
+  },
+  /*Le script ts:config ne permet pas à l'heure actuelle d'ajouter une liste de fichiers d'entrées
+  directement en ligne de commande, @ entrer manuellement!...
+  files ne peut pas être utilisé en même temps qu'exclude,
+  si les deux sont utilisés, seul l'instruction files est prise en compte.
+  L'instruction files transpile récursivement les dépendances à partir des différents points
+  d'entrée .ts/.tsx que l'on lui spécifie. On doit également spécifier les fichiers de définition
+  pour éviter les erreurs de types...:*/
+  "files": [
+    "./typings/tsd.d.ts",
+    "./src/server.tsx",
+    "./src/client.tsx"
+  ]
+  /*
+  "exclude": [
+      "node_modules"
+  ]
+  */
 }
