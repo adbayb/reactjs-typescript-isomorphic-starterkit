@@ -6,7 +6,7 @@ var BUILD_DIR = path.resolve(__dirname, '..', 'public');
 var APP_DIR = path.resolve(__dirname, '..', 'src');
 var webpackProdConfig = {
 	entry: [
-		APP_DIR + '/client.jsx'
+		APP_DIR + '/client'
 	],
 	output: {
 		filename: 'client.bundle.js',

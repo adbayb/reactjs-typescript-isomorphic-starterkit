@@ -13,7 +13,7 @@ class App extends React.Component<any, any> {
 		return (
 			<div>
 				<div style={styles}>
-					<h1> React template with Webpack, react-router and react-hot-loader </h1>
+					<h1> React Typescript template with Webpack, react-router and react-hot-loader </h1>
 					</div>
 
 				{/*Rendu des composants des routes enfants*/}

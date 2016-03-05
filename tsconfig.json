@@ -22,8 +22,8 @@
   pour éviter les erreurs de types...:*/
   "files": [
     "./typings/tsd.d.ts",
-    "./src/server.tsx",
-    "./src/client.tsx"
+    "./src/server/index.tsx",
+    "./src/client/index.tsx"
   ]
   /*
   "exclude": [

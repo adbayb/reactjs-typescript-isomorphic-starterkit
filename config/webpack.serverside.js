@@ -8,7 +8,7 @@ var APP_DIR = path.resolve(__dirname, '..', 'src');
 //dans /bin/server/serverSideRendering.js:
 var webpackServerSideConfig = {
 	entry: [
-		APP_DIR + '/server.jsx'
+		APP_DIR + '/server'
 	],
 	//target permet de spécifier le type de compilation réalisé suivant l'environnement de destination.
 	//ici nous le settons à node car compilation pour un usage serveur (et donc node.js like environnement).
