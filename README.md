@@ -1,6 +1,6 @@
 # React Typescript Starter Kit
 
-An isomorphic React boilerplate with Typescript, Webpack (CSS loader, JSX/JS loader, Image loader) and react-router. <br/>Become more productive and Enable shared javascript that runs on both client and server (client side + server side rendering)). <br/> All necessary tools are set up to start quickly your React project !
+An isomorphic React boilerplate with Typescript, Webpack (CSS loader, JSX/JS loader, Image loader), React Router and React Hot Loader. <br/>Become more productive and Enable shared javascript that runs on both client and server (client side + server side rendering)). <br/> All necessary tools are set up to start quickly your React Typescript project !
 
 <br/>
 ## Getting Started
@@ -8,7 +8,7 @@ An isomorphic React boilerplate with Typescript, Webpack (CSS loader, JSX/JS loa
 To begin with this starter kit project, simply follow these steps:
 
 - [x] Clone repository: `git clone https://github.com/ayoubdev/reactjs-typescript-starterkit.git`
-- [x] Go to cloned directory and feel free to modify `package.json` informations (like project name, description...):
+- [x] Go to cloned directory and feel free to modify `package.json` information (like project name, description...):
 - [x] Run these cli commands: `npm install && npm run prod:deploy`
 - [x] Open this URL and enjoy: `http://localhost:8080/`
 
@@ -33,7 +33,12 @@ To begin with this starter kit project, simply follow these steps:
 
 #### Prod commands:
 
-> **npm run prod:build:clientside** <br/>Build client-side app (Client-Side rendering): Transpile and Bundle static resource to ./public folder via Webpack (see. ./config/webpack.clientside.prod.js)<br/><br/>
-> **npm run prod:build:serverside** <br/>Build server-side app (Server-Side rendering): Transpile and Bundle static resource to ./public folder via Webpack (see. ./config/webpack.serverside.prod.js)<br/><br/>
-> **npm run prod:deploy:clientside** <br/>Build and Launch server client-side app (Client-Side rendering)<br/><br/>
-> **npm run prod:deploy:serverside** *or npm run prod:deploy* <br/>Build and Launch server-side app (Server-Side rendering)<br/><br/>
+> **npm run prod:build:clientside** <br/>Enable Client-Side bundling and rendering: Bundle static resource to ./public folder via Webpack (see. ./config/webpack.clientside.prod.js)<br/><br/>
+> **npm run prod:build:serverside** <br/>Enable Server-Side bundling and rendering: Bundle static resource to ./public folder via Webpack (see. ./config/webpack.serverside.js)<br/><br/>
+> **npm run prod:deploy:clientside** <br/>Build and Launch client-side server (Client-Side rendering)<br/><br/>
+> **npm run prod:deploy:serverside** *or npm run prod:deploy* <br/>Build and Launch server-side server (Server-Side rendering)<br/><br/>
+
+<br/>
+## License
+
+MIT
