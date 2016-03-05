@@ -9,7 +9,7 @@
     "ts:init": "npm run ts:config && npm run ts:def",
     "ts:config": "tsc --init --module es6 --t es6 --allowJs --jsx preserve --noImplicitAny --noImplicitReturns --preserveConstEnums --experimentalDecorators --removeComments --sourceMap",
     "//": "TODO: change tsd to typings since tsd is deprecated",
-	"ts:def": "tsd init && tsd install react --save && tsd install react-dom --save && tsd install react-router --save && tsd install require --save",
+    "ts:def": "tsd init && tsd install react --save && tsd install react-dom --save && tsd install react-router --save && tsd install require --save",
     "ts:build": "tsc -p ./ --outDir ./src",
     "ts:watch": "tsc -p ./ --outDir ./src -w",
     "server:clientside": "node ./bin/server/clientSideRendering.js",
