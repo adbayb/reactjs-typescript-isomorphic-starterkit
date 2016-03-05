@@ -13,25 +13,25 @@ To begin with this starter kit project, simply follow these steps:
 - [x] Open this URL and enjoy: `http://localhost:8080/`
 
 <br/>
-## Usable Commands
+## Available Commands
 
-### Typescript commands:
+#### Typescript commands:
 
 > **npm run ts:def** <br/>Install definition files dependencies<br/><br/>
 > **npm run ts:build** <br/>Transpile tsx/ts files from root files (see tsconfig.json, files section) to jsx ones<br/><br/>
 > **npm run ts:watch** <br/>Transpile and Track tsx/ts modifications from root files (see tsconfig.json, files section)<br/><br/>
 
-### Server commands:
+#### Server commands:
 
 > **npm run server:clientside** <br/>Launch server with client-side rendering enabled<br/><br/>
 > **npm run server:serverside** <br/>Launch server with server-side rendering enabled<br/><br/>
 
-### Dev commands:
+#### Dev commands:
 
 > **npm run dev:build** <br/>Transpile and Bundle static resource to ./public folder via Webpack (see. ./config/webpack.clientside.dev.js)<br/><br/>
 > **npm run dev:watch** <br/>Transpile, Bundle and Track changes (hot reload)<br/><br/>
 
-### Prod commands:
+#### Prod commands:
 
 > **npm run prod:build:clientside** <br/>Build client-side app (Client-Side rendering): Transpile and Bundle static resource to ./public folder via Webpack (see. ./config/webpack.clientside.prod.js)<br/><br/>
 > **npm run prod:build:serverside** <br/>Build server-side app (Server-Side rendering): Transpile and Bundle static resource to ./public folder via Webpack (see. ./config/webpack.serverside.prod.js)<br/><br/>
