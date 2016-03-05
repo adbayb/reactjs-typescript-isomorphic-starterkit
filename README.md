@@ -38,6 +38,10 @@ To begin with this starter kit project, simply follow these steps:
 > **npm run prod:deploy:clientside** <br/>Build and Launch client-side server (Client-Side rendering)<br/><br/>
 > **npm run prod:deploy:serverside** *or npm run prod:deploy* <br/>Build and Launch server-side server (Server-Side rendering)<br/><br/>
 
+#### Misc commands:
+
+> **npm run clean** <br/>Delete bundling output (./public folder) and Clean transpilation output [src folder] (.jsx, .js, .jsx.map, .js.map)<br/><br/>
+
 <br/>
 ## License
 
