@@ -59,7 +59,12 @@ var webpackDevConfig = {
 				// On aurait très bien pu spécifier la contrainte include sur APP_DIR
 				//mais inutile dans le cas où on a du CSS situé en dehors de APP_DIR et que l'on veut inclure:
 				test: /\.css$/,
-				loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+				loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+			},
+			{
+				//SASS Loader:
+				test: /\.scss$/,
+				loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
 			},
 			{
 				//Image loader:

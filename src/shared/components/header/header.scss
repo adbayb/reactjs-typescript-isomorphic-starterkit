@@ -5,5 +5,8 @@ header {
 }
 
 p {
-	font-size: 3vmin;
+	&.header {
+		font-size: 3vmin;
+		color: yellowgreen;
+	}
 }

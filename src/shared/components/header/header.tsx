@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./header.css";
+import "./header.scss";
 
 class HeaderComponent extends React.Component<any, any> {
 	constructor(props:any) {
@@ -9,7 +9,7 @@ class HeaderComponent extends React.Component<any, any> {
 	render() {
 		return (
 			<header>
-				<p> I'm the Header and I'm cool :) </p>
+				<p className="header"> I'm the Header and I'm cool :) </p>
 			</header>
 		);
 	}
