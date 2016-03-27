@@ -1,6 +1,6 @@
 # React Typescript Starter Kit
 
-An isomorphic React boilerplate with Typescript, Webpack (CSS loader, JSX/JS loader, Image loader), React Router and React Hot Loader. <br/>Become more productive and Enable shared javascript that runs on both client and server (client side + server side rendering)). <br/> All necessary tools are set up to start quickly your React Typescript project !
+An isomorphic React boilerplate with Typescript, Webpack (SASS/CSS loader, JSX/JS loader, Image loader), React Router and React Hot Loader. <br/>Become more productive and Enable shared javascript that runs on both client and server (client side + server side rendering)). <br/> All necessary tools are set up to start quickly your React Typescript project !
 
 <br/>
 ## Getting Started
