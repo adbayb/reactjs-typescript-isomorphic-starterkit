@@ -1,33 +1,47 @@
 {
-  //cf. http://json.schemastore.org/tsconfig et
-  //https://github.com/Microsoft/TypeScript/wiki/tsconfig.json pour plus de détails
-  "compilerOptions": {
-    "module": "es2015",
-    "target": "es2015",
-    "allowJs": true,
-    "jsx": "preserve",
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "preserveConstEnums": true,
-    "experimentalDecorators": true,
-    "removeComments": true,
-    "sourceMap": true
-  },
-  /*Le script ts:config ne permet pas à l'heure actuelle d'ajouter une liste de fichiers d'entrées
-  directement en ligne de commande, @ entrer manuellement!...
-  files ne peut pas être utilisé en même temps qu'exclude,
-  si les deux sont utilisés, seul l'instruction files est prise en compte.
-  L'instruction files transpile récursivement les dépendances à partir des différents points
-  d'entrée .ts/.tsx que l'on lui spécifie. On doit également spécifier les fichiers de définition
-  pour éviter les erreurs de types...:*/
-  "files": [
-    "./typings/tsd.d.ts",
-    "./src/server/index.tsx",
-    "./src/client/index.tsx"
-  ]
-  /*
-  "exclude": [
-      "node_modules"
-  ]
-  */
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "noImplicitUseStrict": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!typings/**/*.ts",
+        "typings/index.d.ts",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "files": [
+        "config/webpack.clientside.dev.ts",
+        "config/webpack.clientside.prod.ts",
+        "config/webpack.constants.ts",
+        "config/webpack.serverside.ts",
+        "src/client/index.tsx",
+        "src/server/index.tsx",
+        "src/shared/components/404/404.tsx",
+        "src/shared/components/app.tsx",
+        "src/shared/components/example/example.tsx",
+        "src/shared/components/header/header.tsx",
+        "src/shared/components/navbar/navbar.tsx",
+        "src/shared/components/single/single.tsx",
+        "src/shared/components/welcome/welcome.tsx",
+        "src/shared/routes.tsx",
+        "typings/index.d.ts"
+    ]
 }
