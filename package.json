@@ -61,8 +61,8 @@
   "dependencies": {
     "compression": "^1.6.1",
     "express": "^4.13.4",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "react": "15.1.0",
+    "react-dom": "15.1.0",
     "react-router": "^2.0.0",
     "ts-loader": "0.8.2"
   }
