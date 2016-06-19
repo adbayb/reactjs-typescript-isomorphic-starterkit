@@ -46,3 +46,6 @@ src/**/*.jsx.map
 # Typescript
 tsd.json
 typings
+
+# Webpack
+config/**/*.js
