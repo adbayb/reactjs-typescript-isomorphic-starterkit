@@ -1,14 +1,30 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var devConfig = require('../../config/webpack.clientside.dev');
+var webpack = require("webpack");
+var WebpackDevServer = require("webpack-dev-server");
+var configClient = require("../../config/webpack.dev.client.js");
+var configServer = require("../../config/webpack.dev.server.js");
 
-new WebpackDevServer(webpack(devConfig), {
-	publicPath: devConfig.output.publicPath,
+var options = {
+	chunk: false,
+	chunkModules: false,
+	modules: false,
+	source: false,
+	chunkOrigins: false
+};
+
+new WebpackDevServer(webpack(configClient), {
 	hot: true,
-	historyApiFallback: true
-}).listen(8080, 'localhost', function(err, result) {
-	if(err) {
+	historyApiFallback: true,
+	stats: options
+}).listen(8081, "localhost", function(err) {
+	if(err)
 		console.log(err);
-	}
-	console.log('Webpack Server launched at localhost:8080 (hot reload enabled)');
+
+	console.log("Webpack Server launched with at localhost:8081 (Hot Module Replacement [HMR] enabled)");
+});
+
+webpack(configServer).watch({}, function(err, stats) {
+	if(err)
+		return console.error(err.message);
+
+	console.log(stats.toString(options));
 });

@@ -1,12 +1,19 @@
-header {
-	width: 100vw;
+.header {
+	width: 100%;
 	height: 10vh;
-	background-color: red;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	&> p {
+		font-size: 4vmin;
+		margin: 0;
+		padding: 0;
+	}
 }
 
-p {
-	&.header {
-		font-size: 3vmin;
-		color: yellowgreen;
-	}
+.text {
+	font-size: 3vmin;
+	font-weight: bold;
+	text-align: center;
+	color: yellowgreen;
 }

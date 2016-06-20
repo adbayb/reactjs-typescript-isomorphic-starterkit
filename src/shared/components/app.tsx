@@ -1,33 +1,55 @@
 import * as React from "react";
-import {Link} from "react-router";
+import { Link } from "react-router";
+import Header from "./header/header";
+import Footer from "./footer/footer";
+import "./app.scss";
 
 let styles = {
-	color: 'white',
-	backgroundColor: 'red',
-	minHeight: 100
+	link: {
+		display: "block",
+		position: "absolute",
+		top: "35vh",
+		left: "1.5em",
+		color: "black",
+		backgroundColor: "lightgrey",
+		fontSize: "1.5em",
+		textDecoration: "none",
+		border: "1px solid black"
+	},
+	footer: {
+		color: "white",
+		fontSize: "2vmin",
+		fontWeight: "bold",
+		textAlign: "center"
+	}
 };
+
+interface AppPropTypes {
+	children: React.ReactChild
+}
 
 class App extends React.Component<any, any> {
 	render() {
-		//console.log(this.props.children);
-		return (
+		return(
 			<div>
-				<div style={styles}>
-					<h1> React Typescript template with Webpack, react-router and react-hot-loader </h1>
-					</div>
+				<Header>
+					Isomorphic React Starter Kit v2.0
+				</Header>
 
-				{/*Rendu des composants des routes enfants*/}
 				{this.props.children}
+				<Link to="/" style={styles.link}>Go back</Link>
 
-				<div>
-					<Link to="/">Go back</Link>
-					</div>
+				<Footer>
+					<p style={styles.footer}>
+						Feel free to use it and share it
+					</p>
+					<p style={styles.footer}>Ayoub ADIB</p>
+					<p style={styles.footer}>Twitter: <a href="https://twitter.com/ayoubdeveloper">ayoubdeveloper</a></p>
+					<p style={styles.footer}>Github: <a href="https://github.com/ayoubdev">https://github.com/ayoubdev</a></p>
+				</Footer>
 			</div>
 		);
 	}
 }
-
-//render par défaut sans react-router:
-//render(<App/>, document.getElementById('app'));
 
 export default App;

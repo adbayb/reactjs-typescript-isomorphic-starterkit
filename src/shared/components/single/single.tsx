@@ -1,17 +1,15 @@
 import * as React from "react";
 
-class SingleComponent extends React.Component<any, any> {
-	constructor(props:any) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<div className="container single">
-				{this.props.children}
-			</div>
-		);
-	}
+interface SinglePropTypes {
+	children: React.ReactChild
 }
 
-export default SingleComponent;
+const Single = (props: SinglePropTypes) => {
+	return(
+		<div className="container">
+			{props.children}
+		</div>
+	);
+};
+
+export default Single;

@@ -1,9 +1,7 @@
 const del = require('del');
 
-//Pour exclure un fichier spécifique:
-//del([folder+'/**', '!'+folder, '!'+folder+'/index.html']).then(paths => {
-var items = ['public/**', 'src/**/*.js', 'src/**/*.js.map', 'src/**/*.jsx', 'src/**/*.jsx.map'];
-//del(['public/**', 'src/**/*.js', 'src/**/*.js.map', 'src/**/*.jsx', 'src/**/*.jsx.map']).then(
+var items = ['dist/**', 'src/**/*.js', 'src/**/*.js.map', 'src/**/*.jsx', 'src/**/*.jsx.map'];
+
 items.forEach(function(toDelete, index, array) {
 	del([toDelete]).then(
 		function(paths) {

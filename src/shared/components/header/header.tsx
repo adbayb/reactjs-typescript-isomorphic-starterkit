@@ -1,18 +1,18 @@
 import * as React from "react";
-import "./header.scss";
+const styles = require("./header.scss");
 
-class HeaderComponent extends React.Component<any, any> {
-	constructor(props:any) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<header>
-				<p className="header"> I'm the Header and I'm cool :) </p>
-			</header>
-		);
-	}
+interface HeaderPropTypes {
+	children: String
 }
 
-export default HeaderComponent;
+const Header = (props: HeaderPropTypes) => {
+	return(
+		<header className={styles.header}>
+			<p className={styles.text}>
+				{props.children}
+			</p>
+		</header>
+	);
+};
+
+export default Header;
