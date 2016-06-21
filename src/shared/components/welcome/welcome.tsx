@@ -16,7 +16,7 @@ class Welcome extends React.Component<Props, any> {
 		let params = this.props.params;
 
 		return(
-			<p> Welcome222 {params.name} to React world ! [You are {params.age} years old] </p>
+			<p> Welcome {params.name} to React world ! [You are {params.age} years old] </p>
 		);
 	}
 }

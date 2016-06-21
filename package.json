@@ -1,64 +1,64 @@
 {
-  "name": "reactjs-typescript-isomorphic-starterkit",
-  "version": "2.0.0",
-  "description": "A React.js typescript isomorphic template with Webpack and react-router",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "node ./bin/clean.js",
-    "postinstall": "typings install && npm run deploy",
-    "server": "node ./bin/server",
-    "build": "npm run clean && node ./bin/bundler/prod.js",
-    "deploy": "npm run build && npm run server",
-    "watch": "npm run clean && node ./bin/bundler/dev.js && concurrent \"node ./bin/server/hotReload.js\" \"nodemon ./bin/server --watch dist -e js\" --kill-others"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ayoubdev/reactjs-typescript-isomorphic-starterkit.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ayoubdev/reactjs-typescript-isomorphic-starterkit/issues"
-  },
-  "keywords": [
-    "reactjs",
-    "webpack",
-    "react-router",
-    "boilerplate",
-    "template",
-    "typescript",
-    "transpilation",
-    "isomorphic",
-    "server side rendering",
-    "client side rendering",
-    "starter",
-    "kit",
-    "starterkit",
-    "starter-kit"
-  ],
-  "author": "Ayoub ADIB <ayoub.development@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^2.1.0",
-    "css-loader": "^0.23.1",
-    "del": "^2.2.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "fs": "0.0.2",
-    "node-sass": "^3.8.0",
-    "nodemon": "^1.9.2",
-    "react-hot-loader": "^1.3.0",
-    "sass-loader": "^3.2.1",
-    "style-loader": "^0.13.1",
-    "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.0",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
-  },
-  "dependencies": {
-    "compression": "^1.6.2",
-    "express": "^4.14.0",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-router": "^2.4.1"
-  }
+	"name": "reactjs-typescript-isomorphic-starterkit",
+	"version": "2.0.0",
+	"description": "A React.js typescript isomorphic template with Webpack and react-router",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"clean": "node ./bin/clean.js",
+		"postinstall": "typings install && npm run deploy",
+		"server": "node ./bin/server",
+		"build": "npm run clean && node ./bin/bundler/prod.js",
+		"deploy": "npm run build && npm run server",
+		"watch": "npm run clean && node ./bin/bundler/dev.js && concurrent \"node ./bin/server/hotReload.js\" \"nodemon ./bin/server --watch dist -e js\" --kill-others"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ayoubdev/reactjs-typescript-isomorphic-starterkit.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ayoubdev/reactjs-typescript-isomorphic-starterkit/issues"
+	},
+	"keywords": [
+		"reactjs",
+		"webpack",
+		"react-router",
+		"boilerplate",
+		"template",
+		"typescript",
+		"transpilation",
+		"isomorphic",
+		"server side rendering",
+		"client side rendering",
+		"starter",
+		"kit",
+		"starterkit",
+		"starter-kit"
+	],
+	"author": "Ayoub ADIB <ayoub.development@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"concurrently": "^2.1.0",
+		"css-loader": "^0.23.1",
+		"del": "^2.2.1",
+		"extract-text-webpack-plugin": "^1.0.1",
+		"file-loader": "^0.9.0",
+		"fs": "0.0.2",
+		"node-sass": "^3.8.0",
+		"nodemon": "^1.9.2",
+		"react-hot-loader": "^1.3.0",
+		"sass-loader": "^3.2.1",
+		"style-loader": "^0.13.1",
+		"ts-loader": "^0.8.2",
+		"typescript": "^1.8.10",
+		"typings": "^1.3.0",
+		"webpack": "^1.13.1",
+		"webpack-dev-server": "^1.14.1"
+	},
+	"dependencies": {
+		"compression": "^1.6.2",
+		"express": "^4.14.0",
+		"react": "^15.1.0",
+		"react-dom": "^15.1.0",
+		"react-router": "^2.4.1"
+	}
 }
