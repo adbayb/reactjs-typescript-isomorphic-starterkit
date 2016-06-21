@@ -38,6 +38,7 @@ node_modules
 
 # Misc
 public
+dist
 src/**/*.js
 src/**/*.js.map
 src/**/*.jsx
@@ -46,6 +47,3 @@ src/**/*.jsx.map
 # Typescript
 tsd.json
 typings
-
-# Webpack
-config/**/*.js

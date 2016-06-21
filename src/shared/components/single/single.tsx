@@ -1,10 +1,10 @@
 import * as React from "react";
 
-interface SinglePropTypes {
+interface Props {
 	children: React.ReactChild
 }
 
-const Single = (props: SinglePropTypes) => {
+const Single = (props: Props) => {
 	return(
 		<div className="container">
 			{props.children}

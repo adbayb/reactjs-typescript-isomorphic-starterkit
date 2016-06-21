@@ -1,44 +1,19 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "isolatedModules": false,
-        "jsx": "react",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "declaration": false,
-        "noImplicitAny": false,
-        "noImplicitUseStrict": false,
-        "removeComments": true,
-        "noLib": false,
-        "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
-    },
-    "filesGlob": [
-        "**/*.ts",
-        "**/*.tsx",
-        "!typings/**/*.ts",
-        "typings/index.d.ts",
-        "!node_modules/**"
-    ],
-    "compileOnSave": true,
-    "buildOnSave": false,
-    "atom": {
-        "rewriteTsconfig": true
-    },
-    "files": [
-        "src/client/index.tsx",
-        "src/server/index.tsx",
-        "src/shared/components/404/404.tsx",
-        "src/shared/components/app.tsx",
-        "src/shared/components/example/example.tsx",
-        "src/shared/components/footer/footer.tsx",
-        "src/shared/components/header/header.tsx",
-        "src/shared/components/navbar/navbar.tsx",
-        "src/shared/components/single/single.tsx",
-        "src/shared/components/welcome/welcome.tsx",
-        "src/shared/routes.tsx",
-        "typings/index.d.ts"
-    ]
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES5",
+		"allowJs": true,
+		"jsx": "react",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"preserveConstEnums": true,
+		"experimentalDecorators": true,
+		"removeComments": true,
+		"sourceMap": true
+	},
+	"files": [
+		"./typings/index.d.ts",
+		"./src/server/index.tsx",
+		"./src/client/index.tsx"
+	]
 }

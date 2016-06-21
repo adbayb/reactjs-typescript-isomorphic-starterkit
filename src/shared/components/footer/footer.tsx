@@ -1,11 +1,11 @@
 import * as React from "react";
-const styles = require("./footer.scss");
+const styles: any = require("./footer.scss");
 
-interface FooterPropTypes {
-	children: React.ReactNode
+interface Props {
+	children?: React.ReactNode
 }
 
-const Footer = (props: FooterPropTypes) => {
+const Footer: React.StatelessComponent<Props> = (props: Props) => {
 	return(
 		<footer className={styles.footer}>
 			{props.children}
