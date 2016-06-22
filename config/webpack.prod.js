@@ -3,14 +3,6 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var shared = require("./webpack.shared.js");
 
 var loaders = [{
-	/*
-	Difference between include for loaders and entry:
-	Simply put, entry config will specify all the  entry files. But among these files, only a few of them need to be transformed.
-	That is why "loader" introduces "include" and "exclude".
-
-	Vu que n'importe quel ts rencontré à partir de l'entry point, tsx doit être transformé par ts-loader, il est inutile
-	de spécifier un include sur un dossier dans le loader ts:
-	*/
 	test: /\.ts[x]?$/,
 	loader: "ts-loader"
 }, {
@@ -89,7 +81,6 @@ var server = {
 		extensions: ["", ".js", ".jsx", ".ts", ".tsx"]
 	},
 	plugins: [
-		//Prod optimizations:
 		new webpack.optimize.DedupePlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
 		new webpack.optimize.UglifyJsPlugin({
