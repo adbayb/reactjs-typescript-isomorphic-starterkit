@@ -9,7 +9,7 @@ To begin with this starter kit project, simply follow these steps:
 
 - [x] Clone repository: `git clone https://github.com/ayoubdev/reactjs-typescript-isomorphic-starterkit.git`
 - [x] Go to cloned directory and feel free to modify `package.json` information (like project name, description...):
-- [x] Run these cli commands: `npm install && npm run prod:deploy`
+- [x] Run this cli command: `npm install`
 - [x] Open this URL and enjoy: `http://localhost:8080/`
 
 <br/>
